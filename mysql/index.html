@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mysql基础 | 前端学习文档</title>
+    <meta name="description" content="ahaow前端学习文档">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.f6fea9a4.css" as="style"><link rel="preload" href="/assets/js/app.5b2be8d0.js" as="script"><link rel="preload" href="/assets/js/14.5d8fd97e.js" as="script"><link rel="prefetch" href="/assets/js/10.beb06f94.js"><link rel="prefetch" href="/assets/js/11.1caf0732.js"><link rel="prefetch" href="/assets/js/12.9b251922.js"><link rel="prefetch" href="/assets/js/13.4aff52bd.js"><link rel="prefetch" href="/assets/js/15.71d59c48.js"><link rel="prefetch" href="/assets/js/16.a4963e44.js"><link rel="prefetch" href="/assets/js/17.875103d0.js"><link rel="prefetch" href="/assets/js/18.6d5ba353.js"><link rel="prefetch" href="/assets/js/19.af7ec09d.js"><link rel="prefetch" href="/assets/js/2.d24ef1c1.js"><link rel="prefetch" href="/assets/js/20.22de41cf.js"><link rel="prefetch" href="/assets/js/21.d1a41762.js"><link rel="prefetch" href="/assets/js/22.aa1376bd.js"><link rel="prefetch" href="/assets/js/23.2eb8c763.js"><link rel="prefetch" href="/assets/js/24.314d6e94.js"><link rel="prefetch" href="/assets/js/25.250ce3e8.js"><link rel="prefetch" href="/assets/js/26.35ec5cd2.js"><link rel="prefetch" href="/assets/js/27.b58a1bdc.js"><link rel="prefetch" href="/assets/js/28.34d04a9f.js"><link rel="prefetch" href="/assets/js/29.010b7b00.js"><link rel="prefetch" href="/assets/js/3.2ebfae55.js"><link rel="prefetch" href="/assets/js/30.d6fc6554.js"><link rel="prefetch" href="/assets/js/4.81bdcb4c.js"><link rel="prefetch" href="/assets/js/5.6b818eee.js"><link rel="prefetch" href="/assets/js/6.6bffeb27.js"><link rel="prefetch" href="/assets/js/7.0f5e6ce8.js"><link rel="prefetch" href="/assets/js/8.7cbe64d4.js"><link rel="prefetch" href="/assets/js/9.63047921.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f6fea9a4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端学习文档</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/html/" class="nav-link">HTML</a></div><div class="nav-item"><a href="/css/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/js/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/vue/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/react/" class="nav-link">React</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">webpack</a></div><div class="nav-item"><a href="/interview/" class="nav-link">面试相关</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/html/" class="nav-link">HTML</a></div><div class="nav-item"><a href="/css/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/js/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/vue/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/react/" class="nav-link">React</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">webpack</a></div><div class="nav-item"><a href="/interview/" class="nav-link">面试相关</a></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1 id="mysql基础"><a href="#mysql基础" class="header-anchor">#</a> mysql基础</h1> <h2 id="数据库的基本概念"><a href="#数据库的基本概念" class="header-anchor">#</a> 数据库的基本概念</h2> <ol><li>数据库的英文单词： DataBase 简称 ： DB</li> <li>什么数据库？
+<ul><li>用于存储和管理数据的仓库。</li></ul></li> <li>数据库的特点：
+<ol><li>持久化存储数据的。其实数据库就是一个文件系统</li> <li>方便存储和管理数据</li> <li>使用了统一的方式操作数据库 -- SQL</li></ol></li></ol> <h2 id="mysql数据库软件"><a href="#mysql数据库软件" class="header-anchor">#</a> MySQL数据库软件</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token number">1.</span> 安装
+	<span class="token operator">*</span> 参见《MySQL基础<span class="token punctuation">.</span>pdf》
+<span class="token number">2.</span> 卸载
+	<span class="token number">1.</span> 去mysql的安装目录找到my<span class="token punctuation">.</span>ini文件
+		<span class="token operator">*</span> 复制 datadir<span class="token operator">=</span><span class="token string">&quot;C:/ProgramData/MySQL/MySQL Server 5.5/Data/&quot;</span>
+	<span class="token number">2.</span> 卸载MySQL
+	<span class="token number">3.</span> 删除C:<span class="token operator">/</span>ProgramData目录下的MySQL文件夹。
+<span class="token number">3.</span> 配置
+	<span class="token operator">*</span> MySQL服务启动
+		<span class="token number">1.</span> 手动
+		<span class="token number">2.</span> cmd<span class="token comment">--&gt; services.msc 打开服务的窗口</span>
+		<span class="token number">3.</span> 使用管理员打开cmd
+			<span class="token operator">*</span> net <span class="token keyword">start</span> mysql : 启动mysql的服务
+			<span class="token operator">*</span> net stop mysql:关闭mysql服务
+	<span class="token operator">*</span> MySQL登录
+		<span class="token number">1.</span> mysql <span class="token operator">-</span>uroot <span class="token operator">-</span>p密码
+		<span class="token number">2.</span> mysql <span class="token operator">-</span>hip <span class="token operator">-</span>uroot <span class="token operator">-</span>p连接目标的密码
+		<span class="token number">3.</span> mysql <span class="token comment">--host=ip --user=root --password=连接目标的密码</span>
+	<span class="token operator">*</span> MySQL退出
+		<span class="token number">1.</span> <span class="token keyword">exit</span>
+		<span class="token number">2.</span> quit
+	<span class="token operator">*</span> MySQL目录结构
+		<span class="token number">1.</span> MySQL安装目录：basedir<span class="token operator">=</span><span class="token string">&quot;D:/develop/MySQL/&quot;</span>
+			<span class="token operator">*</span> 配置文件 my<span class="token punctuation">.</span>ini
+		<span class="token number">2.</span> MySQL数据目录：datadir<span class="token operator">=</span><span class="token string">&quot;C:/ProgramData/MySQL/MySQL Server 5.5/Data/&quot;</span>
+			<span class="token operator">*</span> 几个概念
+				<span class="token operator">*</span> 数据库：文件夹
+				<span class="token operator">*</span> 表：文件
+				<span class="token operator">*</span> 数据：数据
+</code></pre></div><h2 id="sql"><a href="#sql" class="header-anchor">#</a> SQL</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token number">1.</span> 什么是<span class="token keyword">SQL</span>？
+	<span class="token operator">*</span> Structured Query <span class="token keyword">Language</span>：结构化查询语言
+	<span class="token operator">*</span> 其实就是定义了操作所有关系型数据库的规则。每一种数据库操作的方式存在不一样的地方，称为“方言”。
+<span class="token number">2.</span> <span class="token keyword">SQL</span>通用语法
+	<span class="token number">1.</span> <span class="token keyword">SQL</span> 语句可以单行或多行书写，以分号结尾。
+	<span class="token number">2.</span> 可使用空格和缩进来增强语句的可读性。
+	<span class="token number">3.</span> MySQL 数据库的 <span class="token keyword">SQL</span> 语句不区分大小写，关键字建议使用大写。
+	<span class="token number">4.</span> <span class="token number">3</span> 种注释
+		<span class="token operator">*</span> 单行注释: <span class="token comment">-- 注释内容 或 # 注释内容(mysql 特有) </span>
+		<span class="token operator">*</span> 多行注释: <span class="token comment">/* 注释 */</span>
+<span class="token number">3.</span> <span class="token keyword">SQL</span>分类
+	<span class="token number">1</span><span class="token punctuation">)</span> DDL<span class="token punctuation">(</span><span class="token keyword">Data</span> Definition <span class="token keyword">Language</span><span class="token punctuation">)</span>数据定义语言
+        用来定义数据库对象：数据库，表，列等。关键字：<span class="token keyword">create</span><span class="token punctuation">,</span> <span class="token keyword">drop</span><span class="token punctuation">,</span><span class="token keyword">alter</span> 等
+    <span class="token number">2</span><span class="token punctuation">)</span> DML<span class="token punctuation">(</span><span class="token keyword">Data</span> Manipulation <span class="token keyword">Language</span><span class="token punctuation">)</span>数据操作语言
+        用来对数据库中表的数据进行增删改。关键字：<span class="token keyword">insert</span><span class="token punctuation">,</span> <span class="token keyword">delete</span><span class="token punctuation">,</span> <span class="token keyword">update</span> 等
+    <span class="token number">3</span><span class="token punctuation">)</span> DQL<span class="token punctuation">(</span><span class="token keyword">Data</span> Query <span class="token keyword">Language</span><span class="token punctuation">)</span>数据查询语言
+        用来查询数据库中表的记录<span class="token punctuation">(</span>数据<span class="token punctuation">)</span>。关键字：<span class="token keyword">select</span><span class="token punctuation">,</span> <span class="token keyword">where</span> 等
+    <span class="token number">4</span><span class="token punctuation">)</span> DCL<span class="token punctuation">(</span><span class="token keyword">Data</span> Control <span class="token keyword">Language</span><span class="token punctuation">)</span>数据控制语言<span class="token punctuation">(</span>了解<span class="token punctuation">)</span>
+        用来定义数据库的访问权限和安全级别，及创建用户。关键字：<span class="token keyword">GRANT</span>， <span class="token keyword">REVOKE</span> 等
+</code></pre></div><h2 id="ddl-操作数据库、表"><a href="#ddl-操作数据库、表" class="header-anchor">#</a> DDL(操作数据库、表)</h2> <h3 id="_1-操作数据库：crud"><a href="#_1-操作数据库：crud" class="header-anchor">#</a> 1. 操作数据库：CRUD</h3> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token number">1.</span> 操作数据库：CRUD
+	<span class="token number">1.</span> C<span class="token punctuation">(</span><span class="token keyword">Create</span><span class="token punctuation">)</span>:创建
+		<span class="token operator">*</span> 创建数据库：
+			<span class="token operator">*</span> <span class="token keyword">create</span> <span class="token keyword">database</span> 数据库名称<span class="token punctuation">;</span>
+		<span class="token operator">*</span> 创建数据库，判断不存在，再创建：
+			<span class="token operator">*</span> <span class="token keyword">create</span> <span class="token keyword">database</span> <span class="token keyword">if</span> <span class="token operator">not</span> <span class="token keyword">exists</span> 数据库名称<span class="token punctuation">;</span>
+		<span class="token operator">*</span> 创建数据库，并指定字符集
+			<span class="token operator">*</span> <span class="token keyword">create</span> <span class="token keyword">database</span> 数据库名称 <span class="token keyword">character</span> <span class="token keyword">set</span> 字符集名<span class="token punctuation">;</span>
+		<span class="token operator">*</span> 练习： 创建db4数据库，判断是否存在，并制定字符集为gbk
+			<span class="token operator">*</span> <span class="token keyword">create</span> <span class="token keyword">database</span> <span class="token keyword">if</span> <span class="token operator">not</span> <span class="token keyword">exists</span> db4 <span class="token keyword">character</span> <span class="token keyword">set</span> gbk<span class="token punctuation">;</span>
+	<span class="token number">2.</span> R<span class="token punctuation">(</span>Retrieve<span class="token punctuation">)</span>：查询
+		<span class="token operator">*</span> 查询所有数据库的名称:
+			<span class="token operator">*</span> <span class="token keyword">show</span> <span class="token keyword">databases</span><span class="token punctuation">;</span>
+		<span class="token operator">*</span> 查询某个数据库的字符集:查询某个数据库的创建语句
+			<span class="token operator">*</span> <span class="token keyword">show</span> <span class="token keyword">create</span> <span class="token keyword">database</span> 数据库名称<span class="token punctuation">;</span>
+	<span class="token number">3.</span> U<span class="token punctuation">(</span><span class="token keyword">Update</span><span class="token punctuation">)</span>:修改
+		<span class="token operator">*</span> 修改数据库的字符集
+			<span class="token operator">*</span> <span class="token keyword">alter</span> <span class="token keyword">database</span> 数据库名称 <span class="token keyword">character</span> <span class="token keyword">set</span> 字符集名称<span class="token punctuation">;</span>
+	<span class="token number">4.</span> D<span class="token punctuation">(</span><span class="token keyword">Delete</span><span class="token punctuation">)</span>:删除
+		<span class="token operator">*</span> 删除数据库
+			<span class="token operator">*</span> <span class="token keyword">drop</span> <span class="token keyword">database</span> 数据库名称<span class="token punctuation">;</span>
+		<span class="token operator">*</span> 判断数据库存在，存在再删除
+			<span class="token operator">*</span> <span class="token keyword">drop</span> <span class="token keyword">database</span> <span class="token keyword">if</span> <span class="token keyword">exists</span> 数据库名称<span class="token punctuation">;</span>
+	<span class="token number">5.</span> 使用数据库
+		<span class="token operator">*</span> 查询当前正在使用的数据库名称
+			<span class="token operator">*</span> <span class="token keyword">select</span> <span class="token keyword">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token operator">*</span> 使用数据库
+			<span class="token operator">*</span> <span class="token keyword">use</span> 数据库名称
+</code></pre></div><h3 id="_2-操作表"><a href="#_2-操作表" class="header-anchor">#</a> 2. 操作表</h3> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token number">2.</span> 操作表
+	<span class="token number">1.</span> C<span class="token punctuation">(</span><span class="token keyword">Create</span><span class="token punctuation">)</span>: 创建
+		<span class="token number">1.</span> 语法: 
+			<span class="token keyword">create</span> <span class="token keyword">table</span> 表名<span class="token punctuation">(</span>
+				列名<span class="token number">1</span> 数据类型<span class="token number">1</span><span class="token punctuation">,</span>
+				列名<span class="token number">2</span> 数据类型<span class="token number">2</span><span class="token punctuation">,</span>
+				<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+				列名n 数据类型n<span class="token punctuation">,</span>
+			<span class="token punctuation">)</span>
+			<span class="token operator">*</span> 注意：最后一列，不需要加逗号（<span class="token punctuation">,</span>）
+			<span class="token operator">*</span> 数据库类型：
+				<span class="token number">1.</span> <span class="token keyword">int</span>: 整数类型
+					<span class="token operator">*</span> age <span class="token keyword">int</span>
+				<span class="token number">2.</span> <span class="token keyword">double</span>: 小数类型
+					<span class="token operator">*</span> score <span class="token keyword">double</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
+				<span class="token number">3.</span> <span class="token keyword">date</span>: 日期<span class="token punctuation">,</span>只包含年月日<span class="token punctuation">,</span>yyyy<span class="token operator">-</span>MM<span class="token operator">-</span>dd
+				<span class="token number">4.</span> <span class="token keyword">datetime</span>: 日期<span class="token punctuation">,</span>包含年月日时分秒  yyyy<span class="token operator">-</span>MM<span class="token operator">-</span>dd HH:mm:ss
+				<span class="token number">5.</span> <span class="token keyword">timestamp</span>:时间错类型  包含年月日时分秒  yyyy<span class="token operator">-</span>MM<span class="token operator">-</span>dd HH:mm:ss    
+					<span class="token operator">*</span> 如果将来不给这个字段赋值，或赋值为<span class="token boolean">null</span>，则默认使用当前的系统时间，来自动赋值
+				<span class="token number">6.</span> <span class="token keyword">varchar</span>：字符串
+					<span class="token operator">*</span> name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>:姓名最大<span class="token number">20</span>个字符
+					<span class="token operator">*</span> zhangsan <span class="token number">8</span>个字符  张三 <span class="token number">2</span>个字符
+			<span class="token operator">*</span> 创建表
+				<span class="token keyword">create</span> <span class="token keyword">table</span> student<span class="token punctuation">(</span>
+					id <span class="token keyword">int</span><span class="token punctuation">,</span>
+					name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+					age <span class="token keyword">int</span><span class="token punctuation">,</span>
+					score <span class="token keyword">double</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+					birthday <span class="token keyword">date</span><span class="token punctuation">,</span>
+					insert_time <span class="token keyword">timestamp</span>
+				<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token operator">*</span> 复制表：
+				<span class="token operator">*</span> <span class="token keyword">create</span> <span class="token keyword">table</span> 表名 <span class="token operator">like</span> 被复制的表名<span class="token punctuation">;</span>
+	<span class="token number">2.</span> R<span class="token punctuation">(</span>Retrieve<span class="token punctuation">)</span>：查询
+		<span class="token operator">*</span> 查询某个数据库中所有的表名称
+			<span class="token operator">*</span> <span class="token keyword">show</span> <span class="token keyword">tables</span><span class="token punctuation">;</span>
+		<span class="token operator">*</span> 查询表结构
+			<span class="token operator">*</span> <span class="token keyword">desc</span> 表名<span class="token punctuation">;</span>
+	<span class="token number">3.</span> U<span class="token punctuation">(</span><span class="token keyword">Update</span><span class="token punctuation">)</span>:修改
+		<span class="token number">1.</span> 修改表名
+			<span class="token operator">*</span> <span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">rename</span> <span class="token keyword">to</span> 新的表名<span class="token punctuation">;</span>
+		<span class="token number">2.</span> 修改表的字符集
+			<span class="token operator">*</span> <span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">character</span> <span class="token keyword">set</span> 字符集名称<span class="token punctuation">;</span>
+		<span class="token number">3.</span> 添加一列
+			<span class="token operator">*</span> <span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">add</span> 列名 数据类型<span class="token punctuation">;</span>
+		<span class="token number">4.</span> 修改列名称 类型
+			<span class="token operator">*</span> <span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 change 列名 新列别 新数据类型<span class="token punctuation">;</span>
+			<span class="token operator">*</span> <span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">modify</span> 列名 新数据类型<span class="token punctuation">;</span>
+		<span class="token number">5.</span> 删除列
+			<span class="token operator">*</span> <span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">drop</span> 列名<span class="token punctuation">;</span>
+	<span class="token number">4.</span> D<span class="token punctuation">(</span><span class="token keyword">Delete</span><span class="token punctuation">)</span>:删除
+		<span class="token operator">*</span> <span class="token keyword">drop</span> <span class="token keyword">table</span> 表名<span class="token punctuation">;</span>
+		<span class="token operator">*</span> <span class="token keyword">drop</span> <span class="token keyword">table</span>  <span class="token keyword">if</span> <span class="token keyword">exists</span> 表名<span class="token punctuation">;</span>
+</code></pre></div><h2 id="dml-增删改表中数据"><a href="#dml-增删改表中数据" class="header-anchor">#</a> DML(增删改表中数据)</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token number">1.</span> 添加数据：
+	<span class="token operator">*</span> 语法：
+		<span class="token operator">*</span> <span class="token keyword">insert</span> <span class="token keyword">into</span> 表名<span class="token punctuation">(</span>列名<span class="token number">1</span><span class="token punctuation">,</span>列名<span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>列名n<span class="token punctuation">)</span> <span class="token keyword">values</span><span class="token punctuation">(</span>值<span class="token number">1</span><span class="token punctuation">,</span>值<span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>值n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token operator">*</span> 注意：
+		<span class="token number">1.</span> 列名和值要一一对应。
+		<span class="token number">2.</span> 如果表名后，不定义列名，则默认给所有列添加值
+			<span class="token operator">*</span> <span class="token keyword">insert</span> <span class="token keyword">into</span> 表名 <span class="token keyword">values</span><span class="token punctuation">(</span>值<span class="token number">1</span><span class="token punctuation">,</span>值<span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>值n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token number">3.</span> 除了数字类型，其他类型需要使用引号<span class="token punctuation">(</span>单双都可以<span class="token punctuation">)</span>引起来
+<span class="token number">2.</span> 删除数据：
+	<span class="token operator">*</span> 语法：
+		<span class="token operator">*</span> <span class="token keyword">delete</span> <span class="token keyword">from</span> 表名 <span class="token punctuation">[</span><span class="token keyword">where</span> 条件<span class="token punctuation">]</span>
+	<span class="token operator">*</span> 注意：
+		<span class="token number">1.</span> 如果不加条件，则删除表中所有记录。
+		<span class="token number">2.</span> 如果要删除所有记录
+			<span class="token number">1.</span> <span class="token keyword">delete</span> <span class="token keyword">from</span> 表名<span class="token punctuation">;</span> <span class="token comment">-- 不推荐使用。有多少条记录就会执行多少次删除操作</span>
+			<span class="token number">2.</span> <span class="token keyword">TRUNCATE</span> <span class="token keyword">TABLE</span> 表名<span class="token punctuation">;</span> <span class="token comment">-- 推荐使用，效率更高 先删除表，然后再创建一张一样的表。</span>
+<span class="token number">3.</span> 修改数据：
+	<span class="token operator">*</span> 语法： 
+		<span class="token operator">*</span> <span class="token keyword">update</span> 表名 <span class="token keyword">set</span> 列名<span class="token number">1</span> <span class="token operator">=</span> 值<span class="token number">1</span><span class="token punctuation">,</span> 列名<span class="token number">2</span> <span class="token operator">=</span> 值<span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span><span class="token keyword">where</span> 条件<span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token operator">*</span> 注意：
+		<span class="token number">1.</span> 如果不加任何条件，则会将表中所有记录全部修改。
+</code></pre></div><h2 id="dql-查询表中的记录"><a href="#dql-查询表中的记录" class="header-anchor">#</a> DQL(查询表中的记录)</h2> <h3 id="_1-语法"><a href="#_1-语法" class="header-anchor">#</a> 1. 语法</h3> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> 表名<span class="token punctuation">;</span>
+
+<span class="token number">1.</span> 语法：
+	<span class="token keyword">select</span> 
+		字段列表
+	<span class="token keyword">from</span> 
+		表名
+	<span class="token keyword">where</span>
+		条件列表
+	<span class="token keyword">group</span> <span class="token keyword">by</span>
+		分组字段
+	<span class="token keyword">having</span>
+		分组之后的条件
+	<span class="token keyword">order</span> <span class="token keyword">by</span>
+		排序
+	<span class="token keyword">limit</span>
+		分页限定
+
+</code></pre></div><h3 id="_2-基础查询"><a href="#_2-基础查询" class="header-anchor">#</a> 2.基础查询</h3> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token number">2.</span> 基础查询
+	<span class="token number">1.</span> 多个字段的查询
+		<span class="token keyword">select</span> 字段名<span class="token number">1</span>，字段名<span class="token number">2.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">from</span> 表名；
+		<span class="token operator">*</span> 注意：
+			<span class="token operator">*</span> 如果查询所有字段，则可以使用<span class="token operator">*</span>来替代字段列表。
+	<span class="token number">2.</span> 去除重复：
+		<span class="token operator">*</span> <span class="token keyword">distinct</span>
+	<span class="token number">3.</span> 计算列
+		<span class="token operator">*</span> 一般可以使用四则运算计算一些列的值。（一般只会进行数值型的计算）
+		<span class="token operator">*</span> ifnull<span class="token punctuation">(</span>表达式<span class="token number">1</span><span class="token punctuation">,</span>表达式<span class="token number">2</span><span class="token punctuation">)</span>：<span class="token boolean">null</span>参与的运算，计算结果都为<span class="token boolean">null</span>
+			<span class="token operator">*</span> 表达式<span class="token number">1</span>：哪个字段需要判断是否为<span class="token boolean">null</span>
+			<span class="token operator">*</span> 如果该字段为<span class="token boolean">null</span>后的替换值。
+	<span class="token number">4.</span> 起别名：
+		<span class="token operator">*</span> <span class="token keyword">as</span>：<span class="token keyword">as</span>也可以省略
+</code></pre></div><h3 id="_3-条件查询"><a href="#_3-条件查询" class="header-anchor">#</a> 3. 条件查询</h3> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token number">3.</span> 条件查询
+	<span class="token number">1.</span> <span class="token keyword">where</span>子句后跟条件
+	<span class="token number">2.</span> 运算符
+		<span class="token operator">*</span> <span class="token operator">&gt;</span> 、<span class="token operator">&lt;</span> 、<span class="token operator">&lt;=</span> 、<span class="token operator">&gt;=</span> 、<span class="token operator">=</span> 、<span class="token operator">&lt;&gt;</span>
+		<span class="token operator">*</span> <span class="token operator">BETWEEN</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">AND</span>
+		<span class="token operator">*</span> <span class="token operator">IN</span><span class="token punctuation">(</span> 集合<span class="token punctuation">)</span>
+		<span class="token operator">*</span> <span class="token operator">LIKE</span>：模糊查询
+			<span class="token operator">*</span> 占位符:
+				<span class="token operator">*</span> _:单个任意字符
+				<span class="token operator">*</span> <span class="token operator">%</span>：多个任意字符
+		<span class="token operator">*</span> <span class="token operator">IS</span> <span class="token boolean">NULL</span>  
+		<span class="token operator">*</span> <span class="token operator">and</span>  或 <span class="token operator">&amp;&amp;</span>
+		<span class="token operator">*</span> <span class="token operator">or</span>  或 <span class="token operator">||</span>
+		<span class="token operator">*</span> <span class="token operator">not</span>  或 <span class="token operator">!</span>
+
+<span class="token comment">-- 查询年龄大于20岁</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> age <span class="token operator">&gt;</span> <span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> age <span class="token operator">&gt;=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询年龄等于20岁</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> age <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询年龄不等于20岁</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> age <span class="token operator">!=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> age <span class="token operator">&lt;&gt;</span> <span class="token number">20</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询年龄大于等于20 小于等于30</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> age <span class="token operator">&gt;=</span> <span class="token number">20</span> <span class="token operator">&amp;&amp;</span>  age <span class="token operator">&lt;=</span><span class="token number">30</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> age <span class="token operator">&gt;=</span> <span class="token number">20</span> <span class="token operator">AND</span>  age <span class="token operator">&lt;=</span><span class="token number">30</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> age <span class="token operator">BETWEEN</span> <span class="token number">20</span> <span class="token operator">AND</span> <span class="token number">30</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询年龄22岁，18岁，25岁的信息</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> age <span class="token operator">=</span> <span class="token number">22</span> <span class="token operator">OR</span> age <span class="token operator">=</span> <span class="token number">18</span> <span class="token operator">OR</span> age <span class="token operator">=</span> <span class="token number">25</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> age <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token number">22</span><span class="token punctuation">,</span><span class="token number">18</span><span class="token punctuation">,</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询英语成绩为null</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> english <span class="token operator">IS</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询英语成绩不为null</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> english  <span class="token operator">IS</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询姓马的有哪些？ like</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> NAME <span class="token operator">LIKE</span> <span class="token string">'马%'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询姓名第二个字是化的人</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> NAME <span class="token operator">LIKE</span> <span class="token string">'_化%'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询姓名是3个字的人</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> NAME <span class="token operator">LIKE</span> <span class="token string">'___'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询姓名中包含德的人</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> student <span class="token keyword">WHERE</span> NAME <span class="token operator">LIKE</span> <span class="token string">'%德%'</span><span class="token punctuation">;</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.5b2be8d0.js" defer></script><script src="/assets/js/14.5d8fd97e.js" defer></script>
+  </body>
+</html>
